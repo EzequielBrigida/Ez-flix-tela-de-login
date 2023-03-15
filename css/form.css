@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.form-background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/pexels-cottonbro-studio-4009409.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    animation: go-back 1s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+        transform:translateY(0)
+      }
+      to {
+        transform: translateY(10px);
+      }   
+}
+
+.logo h1 {
+    color: white;
+}
+
+.logo span {
+    color: rgb(157, 85, 224);
+}
+
+.form-content {
+    width: 430px;
+    height: 431px;
+    padding: 32px 32px;
+    background-color: white;
+    border: solid 1px rgba(184, 184, 184, 0.3);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgb(30 41 59 / 4%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-content h1 {
+    font-size: 16px;
+}
+
+.input-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-edit label, .input-edit a {
+    font-size: 14px;
+}
+
+.input-edit a {
+    text-decoration: none;
+    color: rgb(157, 85, 224);
+}
+
+.input-edit a:hover {
+    text-decoration: underline;
+
+}
+
+.input-edit input {
+    width: 100%;
+    height: 35px;
+    padding: 7px 12px;
+    border: solid 1px rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.input-edit input:focus {
+    outline: solid 1px rgba(157, 85, 224, 0.8);
+    
+}
+
+.space-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-form {
+    width: 100%;
+    padding: 6px;
+    border-radius: 3px;
+    border: solid 1px rgb(157, 85, 224);
+    background-color: rgb(157, 85, 224);
+    color: white;
+    transition: all 0.5s;
+}
+
+.button-form:hover {
+    color: rgb(157, 85, 224);
+    background-color: white;
+    border: solid 1px rgb(157, 85, 224);
+    cursor: pointer;
+}
+
+.line-or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.line-or hr {
+    width: 100%;
+    opacity: 0.3;
+}
+
+.line-or span {
+    font-size: 14px;
+}
+
+.button-google {
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px rgb(157, 85, 224);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.button-google:hover {
+    border-color: #dec4f6;
+    
+}
+
+.button-google p {
+    color: #9d55e0;
+    font-size: 14px;
+}
+
+.paragraph p, .paragraph a {
+    font-size: 14px;
+}
+
+.paragraph p {
+    color: white;
+}
+
+.paragraph a {
+    text-decoration: none;
+    color: #9d55e0;
+}
+
+.paragraph a:hover {
+    text-decoration: underline;
+}
+
